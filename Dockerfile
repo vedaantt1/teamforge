@@ -12,6 +12,5 @@ COPY src ./src
 COPY scripts ./scripts
 COPY --from=web /app/web/dist ./web/dist
 ENV DB_PATH=/data/app.db PORT=3000
-VOLUME /data
 EXPOSE 3000
 CMD ["node","src/server.js"]
