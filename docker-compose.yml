@@ -1,0 +1,7 @@
+services:
+  app:
+    build: .
+    ports: ["3000:3000"]
+    environment: { SECRET: "change-me-to-32+random-chars-please-123456" }
+    volumes: ["data:/data"]
+volumes: { data: {} }

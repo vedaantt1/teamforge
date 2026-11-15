@@ -1,0 +1,9 @@
+node_modules
+*.db*
+data
+web/dist
+web/node_modules
+*.log
+_pycache_/
+.env
+.env.*
